@@ -1,17 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 *{
     margin: none;
     padding: none;
-    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body, html{
+    height: 100vh;
+    overflow: hidden;
 }
 
 body{
-    margin-top: 7.5rem;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-image: url('https://w0.peakpx.com/wallpaper/358/40/HD-wallpaper-hacker-anonymous-evil.jpg');
-    text-shadow: 0 0 0.2px white;
-    background-size: cover;
+}
+
+.main{
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, .15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1{
+    padding-left: 5rem;
+    font-size: 70px;
+    letter-spacing: 15px;
     color: white;
+    text-shadow: 0 0 10px;
+}
+
+.b{
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 2rem;
+}
+
+.b img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.b .details{
+    margin: 10px;
+}
+
+.b .details h2{
+    font-weight: 600;
+}
+
+.b .details p{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.1) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,inherit 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:hover {
+  box-shadow: black 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+a{
+    text-decoration: none;
 }
