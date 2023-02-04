@@ -31,8 +31,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .main h1{
@@ -78,7 +76,6 @@ body{
 }
 
 .button-30 {
-  align-items: center;
   appearance: none;
   background-color: inherit;
   border-radius: 4px;
@@ -89,7 +86,6 @@ body{
   cursor: pointer;
   display: inline-flex;
   height: 48px;
-  justify-content: center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
@@ -116,6 +112,10 @@ a{
     text-decoration: none;
 }
 @media (max-width: 858px){  
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
     p{
         font-size: 10px;
     }
